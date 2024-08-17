@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background-image: url('https://img.freepik.com/premium-photo/scenic-view-beach-with-rocks-cliff-background-perfect-travel-websites-nature-blogs_153912-102506.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.search-form .form-control,
+.search-form .form-select {
+    height: 50px;
+    border-radius: 0;
+}
+
+.search-form .btn {
+    height: 50px;
+    border-radius: 0;
+}
+
+.bord{
+    border-radius: 20px;
+}
+
+.star-rating span {
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.star-rating .bt-group .btn {
+    border-radius: 5px;
+    height: 35px;
+    width:40px;
+    padding:1px;
+    padding-right: 0px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.package{
+    border-radius: 5px;
+}
+
+.navlinks a{
+    text-decoration: none;
+}
+
+.slogan{
+    text-align: left;
+}
+
+.bordering{
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-style:solid;
+    margin-left: 10px;
+    height:80px;
+}
+
+.hei{
+    height:16vh;
+}
+
+.search-bt{
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .search-form .col-md-3,
+    .search-form .col-md-2,
+    .search-form .col-md-1 {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga Travel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container-fluid bg-light p-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo text-primary">go<span class="text-success">g</span>a<span class="text-success">g</span>a</h1>
+            <div class="navlinks">
+                <a href="#" class="me-4 text-dark">Packages</a>
+                <a href="#" class="me-4 text-dark">Tours</a>
+                <a href="#" class="me-4 text-dark">Help</a>
+                <a href="#" class="me-4 text-dark">Membership<span class="m-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem mb-1" viewBox="0 0 16 16">
+  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+</svg></span></a>
+                <a href="#" class="me-4 text-dark">Gift cards<span class="m-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift-fill mb-1" viewBox="0 0 16 16">
+  <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z"/>
+</svg></span></a>
+                <a href="#" class="text-dark border border-dark p-2 bord">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container text-center">
+            <h2 class="mb-2 slogan">Discover Your Next Adventure</h2>
+            <p class="mb-4 slogan">Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+            <div class="search-form p-4 shadow bg-white rounded">
+                <ul class="nav mb-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active bg-black text-light package" id="packages-tab">Packages</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark" id="tours-tab">Tours</button>
+                    </li>
+                </ul>
+                <form>
+                    <div class="row hei">
+                        <div class="col-md-3 bordering">
+                            <p class="text-secondary slogan p-0 m-0">Destination</p>
+                            <input type="text" class="form-control border-0 p-0 m-0" placeholder="Enter the City">
+                        </div>
+                        <div class="col-md-4 bordering d-flex flex-row justify-content-between w-45">
+                        <div>
+                            <p class="text-secondary d-flex align-items-start p-0 m-0">Check-in</p>
+                            <input type="date" class="form-control border-0 p-0 m-0" placeholder="Check-in">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-moon-fill" viewBox="0 0 16 16">
+  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+</svg>
+                             <p class="text-dark">1 Night</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary text-end p-0 m-0">Check-out</p>
+                            <input type="date" class="form-control border-0 p-0 m-0" placeholder="Check-out">
+                        </div>
+                        </div>
+                        <div class="col-md-3 bordering">
+                            <p class="text-secondary p-0 m-0">Guests and Rooms</p>
+                            <select class="form-select border border-0 p-0 m-0">
+                                <option>2 adults, 0 children, 1 room</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="search-bt p-0"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="75" fill="white" class="bi bi-search bg-dark p-4" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg></button>
+                        </div>
+                    </div>
+                        <div>
+                            <div class="star-rating">
+                                <div class="bt-group d-flex align-items-center">
+                                    <div class="text-dark">Star Rating</div>
+                                    <button type="button" class="btn bg-dark text-light m-2">3<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="white" class="bi bi-star pb-1" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+</svg></span></button>
+                                    <button type="button" class="btn bg-dark text-light m-2">4<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="white" class="bi bi-star pb-1" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+</svg></span></button>
+                                    <button type="button" class="btn text-dark bg-secondary m-2">5<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="black" class="bi bi-star pb-1" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+</svg></span></button>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
